@@ -22,14 +22,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        
-       
+    
     }
+    
+    @IBAction func didTapButton(_ sender: AnyObject) {
+       let vc = UIViewController()
+           vc.view.backgroundColor = .red
+           navigationController?.pushViewController(vc, animated: true)
+       }
+       // Exercises
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
  
-   
     
     @IBAction func calcMax(_ sender: Any) {
         
@@ -102,5 +108,10 @@ class ViewController: UIViewController {
     }
     
     
+   
+   
+        
+    
+
 }
 

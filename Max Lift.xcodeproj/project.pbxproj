@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E804AB1AD931158A41EE385 /* Pods_Max_Lift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC34008D3FEC5B4FD2FCF92C /* Pods_Max_Lift.framework */; };
 		A3811309248DFB6F000DAC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3811308248DFB6F000DAC7A /* AppDelegate.swift */; };
 		A381130B248DFB6F000DAC7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A381130A248DFB6F000DAC7A /* SceneDelegate.swift */; };
 		A381130D248DFB6F000DAC7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A381130C248DFB6F000DAC7A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		744897D2D09E2EFBBC7D6031 /* Pods-Max Lift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Max Lift.debug.xcconfig"; path = "Target Support Files/Pods-Max Lift/Pods-Max Lift.debug.xcconfig"; sourceTree = "<group>"; };
 		A3811305248DFB6F000DAC7A /* Max Lift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Max Lift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3811308248DFB6F000DAC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A381130A248DFB6F000DAC7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		A3811311248DFB70000DAC7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3811314248DFB70000DAC7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3811316248DFB70000DAC7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D3BCC2B0799D57A9F1CD8C /* Pods-Max Lift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Max Lift.release.xcconfig"; path = "Target Support Files/Pods-Max Lift/Pods-Max Lift.release.xcconfig"; sourceTree = "<group>"; };
+		FC34008D3FEC5B4FD2FCF92C /* Pods_Max_Lift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Max_Lift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E804AB1AD931158A41EE385 /* Pods_Max_Lift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B2C37DFA13FBB9175D7D42E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				744897D2D09E2EFBBC7D6031 /* Pods-Max Lift.debug.xcconfig */,
+				D6D3BCC2B0799D57A9F1CD8C /* Pods-Max Lift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		633C6C4ACE459996BB1CD58D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC34008D3FEC5B4FD2FCF92C /* Pods_Max_Lift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A38112FC248DFB6F000DAC7A = {
 			isa = PBXGroup;
 			children = (
 				A3811307248DFB6F000DAC7A /* Max Lift */,
 				A3811306248DFB6F000DAC7A /* Products */,
+				2B2C37DFA13FBB9175D7D42E /* Pods */,
+				633C6C4ACE459996BB1CD58D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3811319248DFB70000DAC7A /* Build configuration list for PBXNativeTarget "Max Lift" */;
 			buildPhases = (
+				B75EB1B6B24D9DFE1708DC54 /* [CP] Check Pods Manifest.lock */,
 				A3811301248DFB6F000DAC7A /* Sources */,
 				A3811302248DFB6F000DAC7A /* Frameworks */,
 				A3811303248DFB6F000DAC7A /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B75EB1B6B24D9DFE1708DC54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Max Lift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3811301248DFB6F000DAC7A /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		A381131A248DFB70000DAC7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744897D2D09E2EFBBC7D6031 /* Pods-Max Lift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		A381131B248DFB70000DAC7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D3BCC2B0799D57A9F1CD8C /* Pods-Max Lift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -26,9 +26,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapButton(_ sender: AnyObject) {
-       let vc = UIViewController()
-           vc.view.backgroundColor = .red
-           navigationController?.pushViewController(vc, animated: true)
+       //let vc = UIViewController()
+        //    vc.view.backgroundColor = .red
+         //  navigationController?.pushViewController(vc, animated: true)
        }
        // Exercises
     override func didReceiveMemoryWarning() {
